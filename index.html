@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaintura Construction</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Loader -->
+<div id="loader"><div class="spinner"></div></div>
+
+<header>
+    <div class="container nav-container">
+        <h1 class="logo">Kaintura Construction</h1>
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="themeToggle" class="theme-btn">🌙</button></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero" id="home">
+    <div>
+        <h2>Building Strong Foundations for a Better Tomorrow</h2>
+        <a href="tel:+919927583628" class="call-btn">Call Now</a>
+    </div>
+</section>
+
+<section id="about" class="section">
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Kaintura Construction delivers strong, safe and modern structures with premium quality and expert supervision.</p>
+    </div>
+</section>
+
+<section id="services" class="section gray">
+    <div class="container">
+        <h2>Our Services</h2>
+
+        <div class="services-grid">
+
+            <!-- Service 1 -->
+            <div class="service-card">
+                <img src="./assist/residential.jpg.jpeg" alt="Residential Construction">
+                <h3>Residential Construction</h3>
+                <p>
+                    We build modern and durable homes with strong foundations,
+                    premium materials, and quality finishing to ensure safety
+                    and long-term reliability.
+                </p>
+                <a href="https://wa.me/919927583628" class="service-btn">Get Quote</a>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-card">
+                <img src="./assist/commercial.jpg.jpeg" alt="Commercial Projects">
+                <h3>Commercial Projects</h3>
+                <p>
+                    From office buildings to commercial complexes,
+                    we deliver innovative and cost-effective commercial
+                    construction solutions.
+                </p>
+                <a href="https://wa.me/919927583628" class="service-btn">Get Quote</a>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card">
+                <img src="./assist/renovation.jpg.jpeg" alt="Renovation">
+                <h3>Renovation & Remodeling</h3>
+                <p>
+                    Upgrade and redesign your property with our expert
+                    renovation services that enhance beauty and functionality.
+                </p>
+                <a href="https://wa.me/919927583628" class="service-btn">Get Quote</a>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-card">
+                <img src="./assist/interior.jpg.jpeg" alt="Interior & Exterior">
+                <h3>Interior & Exterior Design</h3>
+                <p>
+                    We provide stylish interior and exterior finishing
+                    services to give your building a premium and elegant look.
+                </p>
+                <a href="https://wa.me/919927583628" class="service-btn">Get Quote</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section id="projects" class="section">
+    <div class="container">
+        <h2>Our Projects Gallery</h2>
+
+        <!-- Filter Buttons -->
+        <div class="gallery-buttons">
+            <button onclick="filterGallery('all')">All</button>
+            <button onclick="filterGallery('image')">Photos</button>
+            <button onclick="filterGallery('video')">Videos</button>
+        </div>
+
+        <div class="gallery-grid">
+
+            <!-- Images -->
+            <div class="gallery-item image">
+                <img src="./assist/project1.jpg.jpeg" onclick="openLightbox(this.src)">
+            </div>
+
+            <div class="gallery-item image">
+                <img src="./assist/project2.jpg.jpeg" onclick="openLightbox(this.src)">
+            </div>
+
+            <!-- Videos -->
+            <div class="gallery-item video">
+                <video controls>
+                    <source src="./assist/vedio2.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="gallery-item video">
+                <video controls>
+                    <source src="./assist/vedio2.mp4" type="video/mp4">
+                </video>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img">
+</div>
+
+
+<section id="team" class="section">
+    <div class="container">
+        <h2>Leadership Team</h2>
+        <div class="team-grid">
+
+            <div class="team-card">
+                <img src="./assist/founder.jpg.jpeg" alt="Founder">
+                <h3>Er.Ankit Kaintura</h3>
+                <p>Founder</p>
+                <a href="tel:+919927583628" class="call-btn">Call Now</a>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/18AvcpXhoo/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/kaintura_construction_?igsh=dWw3N2w0dzB1MjVw"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <img src="./assist/architect.jpg.jpeg" alt="Architect">
+                <h3>Sachin Chauhan</h3>
+                <p>Architect</p>
+            </div>
+
+            <div class="team-card">
+                <img src="./assist/engineer.jpg.jpeg" alt="Engineer">
+                <h3>Raja Kafola</h3>
+                <p>Site Engineer</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section gray">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Message" required></textarea>
+            <button type="submit">Send Message</button>
+            <p id="formMessage"></p>
+        </form>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>Our Location</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.809910780905!2d78.05548597502043!3d30.29947270644348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929f9c82575d3%3A0x6a38c96d2f31ad66!2sKAINTURA%20CONSTRUCTION!5e0!3m2!1sen!2sin!4v1770879987551!5m2!1sen!2sin"
+             width="400"
+              height="300" 
+             style="border:0;" 
+             allowfullscreen="true" 
+             loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>"
+               
+        </div>
+    </div>
+</section>
+
+
+<a href="https://wa.me/919927583628" class="whatsapp" target="_blank">Chat</a>
+
+<footer>
+    <p>© 2026 Kaintura Construction</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
